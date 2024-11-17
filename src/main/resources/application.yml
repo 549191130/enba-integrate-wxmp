@@ -1,0 +1,21 @@
+server:
+  port: 80
+#  ssl:
+#    enabled: false
+#    key-store: classpath:www.enba.fun.pfx
+#    key-store-password: 5q8i5lr998m
+#    key-store-type: PKCS12
+
+spring:
+  application:
+    name: @project.artifactId@
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+
+enba:
+  mp:
+    app-id: 自己公众号APPID
+    app-secret: 自己公众号APPSECRET
+    redirect-uri: http://www.enba.fun/enba-wxmp/callback
